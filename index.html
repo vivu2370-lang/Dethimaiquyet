@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đề Thi Ngữ Văn 7 - Giữa Học Kỳ 1 (Nâng Cao)</title>
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --accent: #b45309;
+            --bg: #f8fafc;
+            --card: #ffffff;
+            --text: #1e293b;
+            --border: #e2e8f0;
+            --success: #15803d;
+            --danger: #b91c1c;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        h1 {
+            color: var(--primary);
+            font-size: 22px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-weight: bold;
+            color: var(--accent);
+            font-size: 16px;
+        }
+
+        .exam-info {
+            display: flex;
+            justify-content: space-between;
+            background: #eff6ff;
+            padding: 12px 20px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .timer {
+            color: var(--danger);
+        }
+
+        .section-title {
+            background: var(--primary);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 6px;
+            font-size: 16px;
+            margin: 25px 0 15px 0;
+        }
+
+        .poem-box {
+            background: #f1f5f9;
+            padding: 20px;
+            border-left: 4px solid var(--primary-light);
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            padding: 15px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            background: #fff;
+        }
+
+        .question p {
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .options label {
+            display: block;
+            padding: 8px 12px;
+            margin: 5px 0;
+            border-radius: 6px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: 0.2s;
+        }
+
+        .options label:hover {
+            background: #f1f5f9;
+        }
+
+        .options input {
+            margin-right: 10px;
+        }
+
+        textarea {
+            width: 100%;
+            height: 250px;
+            padding: 12px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            resize: vertical;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        textarea:focus {
+            outline: none;
+            border-color: var(--primary-light);
+            box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 15px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 30px;
+            transition: 0.3s;
+        }
+
+        .btn-submit:hover {
+            background: #1e40af;
+        }
+
+        .result-box {
+            display: none;
+            margin-top: 30px;
+            padding: 25px;
+            border: 2px solid var(--primary);
+            border-radius: 10px;
+            background: #f8fafc;
+        }
+
+        .score-display {
+            font-size: 28px;
+            font-weight: bold;
+            color: var(--primary);
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        .criteria-list {
+            list-style: none;
+            margin-top: 15px;
+        }
+
+        .criteria-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed var(--border);
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .pass { color: var(--success); font-weight: bold; }
+        .fail { color: var(--danger); font-weight: bold; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>ĐỀ THI GIỮA HỌC KỲ I - NGỮ VĂN 7</h1>
+        <div class="subtitle">Môn: Ngữ văn | Thời g
